@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "86061f93-0ae2-4ccd-90f5-94ec1f83cb8a",
+		"name": "PW2-api-hospital",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26212250"
+	},
+	"item": [
+		{
+			"name": "inserir",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nome_paciente",
+							"value": "Anete Lopes",
+							"contentType": "",
+							"type": "text"
+						},
+						{
+							"key": "telefone_paciente",
+							"value": "(00) 000000-00",
+							"type": "text"
+						},
+						{
+							"key": "celular_paciente",
+							"value": "(11) 95137-8439",
+							"type": "text"
+						},
+						{
+							"key": "email_paciente",
+							"value": "Anete.silva89@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "nome_responsavel",
+							"value": "Gizele Souza",
+							"type": "text"
+						},
+						{
+							"key": "telefone_responsavel",
+							"value": "(11) 98137-5168",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/C:/Users/ETEC/Pictures/Screenshots/images.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url_base}}/paciente/inserir",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"paciente",
+						"inserir"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
